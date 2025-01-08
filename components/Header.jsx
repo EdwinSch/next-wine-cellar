@@ -1,14 +1,16 @@
 "use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/logo-primary.png";
 import { useState } from "react";
-import { FaBars, FaGoogle, FaX } from "react-icons/fa6";
+import { FaBars, FaGoogle, FaX, FaUser } from "react-icons/fa6";
+import Navigation from "./Navigation";
 import MobileNav from "./MobileNav";
 
-const Navbar = () => {
+const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // Temporary login testing
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   return (
     <header className="bg-secondary relative">
@@ -39,29 +41,31 @@ const Navbar = () => {
         </Link>
 
         {/* Navigation */}
-        <nav className="hidden sm:flex items-center gap-6 text-primary">
-          <Link href="/collection" className="hover:text-primaryHover">
-            Collection
-          </Link>
-          <Link href="/collection/add" className="hover:text-primaryHover">
-            Add Wine
-          </Link>
-          <Link href="/wishlist" className="hover:text-primaryHover">
-            Wishlist
-          </Link>
-        </nav>
+        <Navigation isLoggedIn={isLoggedIn} />
 
-        {/* Login Button */}
-        <button className="px-4 py-2 font-semibold bg-primary text-white hover:bg-primaryHover duration-200 rounded-md flex gap-2 items-center">
-          <FaGoogle /> Login
-        </button>
+        {/* Logged In/Out Buttons */}
+        {isLoggedIn ? (
+          <button className="bg-primary p-2 rounded-full" type="button">
+            <FaUser className="text-white text-lg" />
+          </button>
+        ) : (
+          <button
+            className="px-4 py-1.5 font-semibold bg-primary text-white hover:bg-primaryHover duration-200 rounded-md flex gap-2 items-center"
+            type="button"
+          >
+            <FaGoogle /> Login
+          </button>
+        )}
       </div>
 
-      {/* Show Mobile Menu */}
+      {/* Show/Hide Mobile Menu (absolute) */}
       {isMobileMenuOpen && (
-        <MobileNav setIsMobileMenuOpen={setIsMobileMenuOpen} />
+        <MobileNav
+          setIsMobileMenuOpen={setIsMobileMenuOpen}
+          isLoggedIn={isLoggedIn}
+        />
       )}
     </header>
   );
 };
-export default Navbar;
+export default Header;
