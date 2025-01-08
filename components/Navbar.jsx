@@ -1,39 +1,66 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/logo-primary.png";
+import { useState } from "react";
+import { FaBars, FaGoogle, FaX } from "react-icons/fa6";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
-    <header className="bg-secondary">
+    <header className="bg-secondary relative">
       <div
         id="layout-container"
-        className="mx-auto max-w-7xl flex justify-between px-8 py-4"
+        className="mx-auto max-w-7xl flex justify-between items-center px-4 sm:px-8 h-[72px]"
       >
-        {/* Left Side */}
-        <div
-          className="flex items-center gap-10
-        "
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className="sm:hidden"
+          type="button"
+          aria-controls="mobile-menu"
         >
-          {/* Logo */}
-          <div className="flex items-center">
-            <Image src={logo} alt="wine cellar logo" className="h-10 w-auto" />
-            <h1 className="ml-2 text-xl text-primary font-semibold">
-              Wine<span className="font-normal">Cellar</span>
-            </h1>
-          </div>
-          {/* Navigation */}
-          <nav className="flex items-center gap-4 text-primary">
-            <Link href="/collection">Collection</Link>
-            <Link href="/collection/add">Add Wine</Link>
-            <Link href="/wishlist">Wishlist</Link>
-          </nav>
-        </div>
+          {isMobileMenuOpen ? (
+            <FaX className="text-2xl" />
+          ) : (
+            <FaBars className="text-2xl" />
+          )}
+        </button>
 
-        {/* Right Side */}
-        <button className="px-4 py-2 font-semibold bg-primary text-white hover:bg-primaryHover duration-200 rounded-md">
-          Login
+        {/* Logo */}
+        <Link href="/" className="flex items-center">
+          <Image src={logo} alt="wine cellar logo" className="h-10 w-auto" />
+          <h1 className="hidden lg:block ml-2 text-xl text-primary font-semibold">
+            Wine<span className="font-normal">Cellar</span>
+          </h1>
+        </Link>
+
+        {/* Navigation */}
+        <nav className="hidden sm:flex items-center gap-6 text-primary">
+          <Link href="/collection" className="hover:text-primaryHover">
+            Collection
+          </Link>
+          <Link href="/collection/add" className="hover:text-primaryHover">
+            Add Wine
+          </Link>
+          <Link href="/wishlist" className="hover:text-primaryHover">
+            Wishlist
+          </Link>
+        </nav>
+
+        {/* Login Button */}
+        <button className="px-4 py-2 font-semibold bg-primary text-white hover:bg-primaryHover duration-200 rounded-md flex gap-2 items-center">
+          <FaGoogle /> Login
         </button>
       </div>
+
+      {/* Show Mobile Menu */}
+      {isMobileMenuOpen && (
+        <MobileNav setIsMobileMenuOpen={setIsMobileMenuOpen} />
+      )}
     </header>
   );
 };

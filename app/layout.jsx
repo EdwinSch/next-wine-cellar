@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-  title: "My Wine Cellar",
+  title: "Wine Cellar",
   keywords: "wine, collection, cellar",
   description: "My wine collection",
 };
