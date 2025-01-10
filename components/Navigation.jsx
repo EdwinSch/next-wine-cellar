@@ -12,7 +12,7 @@ const Navigation = ({ isLoggedIn }) => {
           pathname === "/collection"
             ? "underline underline-offset-4 text-givry-600"
             : ""
-        } hover:text-givry-600 capitalize`}
+        } hover:text-givry-600 duration-200 capitalize`}
       >
         my collection
       </Link>
@@ -24,7 +24,7 @@ const Navigation = ({ isLoggedIn }) => {
             pathname === "/collection/add"
               ? "underline underline-offset-4 text-givry-600"
               : ""
-          } hover:text-givry-600 capitalize`}
+          } hover:text-givry-600 duration-200 capitalize`}
         >
           add wine
         </Link>
@@ -36,7 +36,7 @@ const Navigation = ({ isLoggedIn }) => {
           pathname === "/wishlist"
             ? "underline underline-offset-4 text-givry-600"
             : ""
-        } hover:text-givry-600 capitalize`}
+        } hover:text-givry-600 duration-200 capitalize`}
       >
         wishlist
       </Link>

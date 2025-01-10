@@ -45,12 +45,15 @@ const Header = () => {
 
         {/* Logged In/Out Buttons */}
         {isLoggedIn ? (
-          <button className="bg-givry-900 p-2 rounded-full" type="button">
+          <button
+            className="bg-givry-900 p-2 rounded-full duration-200 hover:bg-givry-600"
+            type="button"
+          >
             <FaUser className="text-white text-lg" />
           </button>
         ) : (
           <button
-            className="px-4 py-1.5 font-semibold bg-givry-950 text-white hover:bg-primaryHover duration-200 rounded-md flex gap-2 items-center"
+            className="px-4 py-1.5 font-semibold bg-givry-950 text-white hover:bg-givry-600 duration-200 rounded-md flex gap-2 items-center"
             type="button"
           >
             <FaGoogle /> Login
