@@ -5,14 +5,14 @@ const Navigation = ({ isLoggedIn }) => {
   const pathname = usePathname();
 
   return (
-    <nav className="hidden sm:flex items-center gap-6 text-primary">
+    <nav className="hidden sm:flex items-center gap-6 text-givry-900">
       <Link
         href="/collection"
         className={`${
           pathname === "/collection"
-            ? "underline underline-offset-4 text-primaryHover"
+            ? "underline underline-offset-4 text-givry-600"
             : ""
-        } hover:text-primaryHover capitalize`}
+        } hover:text-givry-600 capitalize`}
       >
         my collection
       </Link>
@@ -22,9 +22,9 @@ const Navigation = ({ isLoggedIn }) => {
           href="/collection/add"
           className={`${
             pathname === "/collection/add"
-              ? "underline underline-offset-4 text-primaryHover"
+              ? "underline underline-offset-4 text-givry-600"
               : ""
-          } hover:text-primaryHover capitalize`}
+          } hover:text-givry-600 capitalize`}
         >
           add wine
         </Link>
@@ -34,9 +34,9 @@ const Navigation = ({ isLoggedIn }) => {
         href="/wishlist"
         className={`${
           pathname === "/wishlist"
-            ? "underline underline-offset-4 text-primaryHover"
+            ? "underline underline-offset-4 text-givry-600"
             : ""
-        } hover:text-primaryHover capitalize`}
+        } hover:text-givry-600 capitalize`}
       >
         wishlist
       </Link>

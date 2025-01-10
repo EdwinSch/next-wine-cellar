@@ -13,7 +13,7 @@ const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   return (
-    <header className="bg-secondary relative">
+    <header className="bg-givry-200 relative">
       <div
         id="layout-container"
         className="mx-auto max-w-7xl flex justify-between items-center px-4 sm:px-8 h-[72px]"
@@ -26,16 +26,16 @@ const Header = () => {
           aria-controls="mobile-menu"
         >
           {isMobileMenuOpen ? (
-            <FaX className="text-2xl" />
+            <FaX className="text-2xl text-givry-900" />
           ) : (
-            <FaBars className="text-2xl" />
+            <FaBars className="text-2xl text-givry-900" />
           )}
         </button>
 
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image src={logo} alt="wine cellar logo" className="h-10 w-auto" />
-          <h1 className="hidden lg:block ml-2 text-xl text-primary font-semibold">
+          <h1 className="hidden lg:block ml-2 text-xl text-givry-950 font-semibold">
             Wine<span className="font-normal">Cellar</span>
           </h1>
         </Link>
@@ -45,12 +45,12 @@ const Header = () => {
 
         {/* Logged In/Out Buttons */}
         {isLoggedIn ? (
-          <button className="bg-primary p-2 rounded-full" type="button">
+          <button className="bg-givry-900 p-2 rounded-full" type="button">
             <FaUser className="text-white text-lg" />
           </button>
         ) : (
           <button
-            className="px-4 py-1.5 font-semibold bg-primary text-white hover:bg-primaryHover duration-200 rounded-md flex gap-2 items-center"
+            className="px-4 py-1.5 font-semibold bg-givry-950 text-white hover:bg-primaryHover duration-200 rounded-md flex gap-2 items-center"
             type="button"
           >
             <FaGoogle /> Login

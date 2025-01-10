@@ -5,12 +5,12 @@ const MobileNav = ({ setIsMobileMenuOpen, isLoggedIn }) => {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-secondary absolute top-[72px] left-0 w-full px-4 pb-4 pt-2 flex sm:hidden flex-col gap-4 overflow-hidden">
+    <nav className="bg-givry-200 absolute top-[72px] left-0 w-full px-4 pb-4 pt-2 flex sm:hidden flex-col gap-4 overflow-hidden text-givry-900">
       <Link
         href="/collection"
         className={`${
           pathname === "/collection" ? "underline underline-offset-4" : ""
-        } hover:text-primaryHover capitalize w-fit`}
+        } hover:text-givry-600 capitalize w-fit`}
         onClick={() => setIsMobileMenuOpen(false)}
       >
         my collection
@@ -21,7 +21,7 @@ const MobileNav = ({ setIsMobileMenuOpen, isLoggedIn }) => {
           href="/collection/add"
           className={`${
             pathname === "/collection/add" ? "underline underline-offset-4" : ""
-          } hover:text-primaryHover capitalize w-fit`}
+          } hover:text-givry-600 capitalize w-fit`}
           onClick={() => setIsMobileMenuOpen(false)}
         >
           add wine
@@ -32,7 +32,7 @@ const MobileNav = ({ setIsMobileMenuOpen, isLoggedIn }) => {
         href="/wishlist"
         className={`${
           pathname === "/wishlist" ? "underline underline-offset-4" : ""
-        } hover:text-primaryHover capitalize w-fit`}
+        } hover:text-givry-600 capitalize w-fit`}
         onClick={() => setIsMobileMenuOpen(false)}
       >
         wishlist
