@@ -1,0 +1,62 @@
+[
+  {
+    "display_name": "babylonstoren babel",
+    "subname": "",
+    "main_type": "red",
+    "sub-type": "blend",
+    "winery": "babylonstoren",
+    "origin": "paarl",
+    "country": "south-africa",
+    "year": 2022,
+    "grapes": [
+      "Cabernet Sauvignon",
+      "Petit Verdot",
+      "Merlot",
+      "Pinot Noir",
+      "Shiraz",
+      "Pinotage",
+      "Grenache",
+      "Malbec"
+    ],
+    "in_stock": 1,
+    "image": "https://images.vivino.com/thumbs/ksEp5KesQTm_TgbJTLnyDg_pb_x960.png",
+    "rating": 4,
+    "average_value": 20,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "display_name": "otazu premium cuvée",
+    "subname": "",
+    "main_type": "red",
+    "sub-type": "blend",
+    "winery": "bodega otazu",
+    "origin": "navarra",
+    "country": "spain",
+    "year": 2019,
+    "grapes": ["Cabernet Sauvignon", "Merlot", "Tempranillo"],
+    "in_stock": 1,
+    "image": "https://www.decantalo.nl/69292-product_img/otazu-premium-cuvee.jpg",
+    "rating": 4,
+    "average_value": 14,
+    "createdAt": "2024-01-02T00:00:00.000Z",
+    "updatedAt": "2024-01-02T00:00:00.000Z"
+  },
+  {
+    "display_name": "llopart rosé",
+    "subname": "",
+    "main_type": "corpinnat",
+    "sub-type": "brut rosé",
+    "winery": "llopart",
+    "origin": "penedès",
+    "country": "spain",
+    "year": 2021,
+    "grapes": ["macabeo, xarel-lo, parellada"],
+    "in_stock": 2,
+    "image": "https://images.vivino.com/thumbs/wiIppq_MSYWQdcCrtAPsSQ_pb_x960.png",
+    "rating": 5,
+    "average_value": 25,
+    "createdAt": "2024-01-03T00:00:00.000Z",
+    "updatedAt": "2024-01-03T00:00:00.000Z"
+  }
+]
