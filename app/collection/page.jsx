@@ -3,16 +3,13 @@ import WineCard from "@/components/WineCard";
 
 const CollectionPage = () => {
   return (
-    <div
-      id="layout-container"
-      className="mx-auto max-w-7xl px-4 sm:px-8 inspect"
-    >
+    <div id="layout-container" className="mx-auto max-w-7xl px-4 sm:px-8">
       {wineCollection.length === 0 ? (
         <p>No items found</p>
       ) : (
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {wineCollection.map((wine, idx) => {
-            return <WineCard key={idx} wine={wine} />;
+        <section className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {wineCollection.map((wine) => {
+            return <WineCard key={wine._id} wine={wine} />;
           })}
         </section>
       )}

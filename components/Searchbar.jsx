@@ -2,7 +2,7 @@ const Searchbar = () => {
   return (
     <form
       id="layout-container"
-      className="mx-auto max-w-7xl py-8 px-4 sm:px-28 flex"
+      className="mx-auto max-w-7xl px-4 sm:px-28 flex"
     >
       <label htmlFor="name" className="sr-only">
         Name

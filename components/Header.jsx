@@ -13,7 +13,7 @@ const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   return (
-    <header className="bg-givry-200 relative">
+    <header className="bg-givry-200 relative mb-14">
       <div
         id="layout-container"
         className="mx-auto max-w-7xl flex justify-between items-center px-4 sm:px-8 h-[72px]"

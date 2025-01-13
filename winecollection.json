@@ -1,9 +1,10 @@
 [
   {
+    "_id": 1,
     "display_name": "babylonstoren babel",
-    "subname": "",
     "main_type": "red",
-    "sub-type": "blend",
+    "sub_type": "blend",
+    "aging": "joven",
     "winery": "babylonstoren",
     "origin": "paarl",
     "country": "south-africa",
@@ -26,10 +27,11 @@
     "updatedAt": "2024-01-01T00:00:00.000Z"
   },
   {
+    "_id": 2,
     "display_name": "otazu premium cuvée",
-    "subname": "",
     "main_type": "red",
-    "sub-type": "blend",
+    "sub_type": "blend",
+    "aging": "joven",
     "winery": "bodega otazu",
     "origin": "navarra",
     "country": "spain",
@@ -43,10 +45,11 @@
     "updatedAt": "2024-01-02T00:00:00.000Z"
   },
   {
+    "_id": 3,
     "display_name": "llopart rosé",
-    "subname": "",
     "main_type": "corpinnat",
-    "sub-type": "brut rosé",
+    "sub_type": "brut rosé",
+    "aging": "reserva",
     "winery": "llopart",
     "origin": "penedès",
     "country": "spain",
