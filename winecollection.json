@@ -61,5 +61,23 @@
     "average_value": 25,
     "createdAt": "2024-01-03T00:00:00.000Z",
     "updatedAt": "2024-01-03T00:00:00.000Z"
+  },
+  {
+    "_id": 4,
+    "display_name": "ramon bilbao",
+    "main_type": "red",
+    "sub_type": "crianza",
+    "aging": "joven",
+    "winery": "ramon bilbao",
+    "origin": "bilbao",
+    "country": "spain",
+    "year": 2020,
+    "grapes": ["rioja, tempranillo"],
+    "in_stock": 2,
+    "image": "https://images.vivino.com/thumbs/pATAas-ZTICp5cUf2lgK4g_pb_x600.png",
+    "rating": 4,
+    "average_value": 15,
+    "createdAt": "2024-01-03T00:00:00.000Z",
+    "updatedAt": "2024-01-03T00:00:00.000Z"
   }
 ]

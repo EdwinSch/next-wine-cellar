@@ -7,7 +7,7 @@ const CollectionPage = () => {
       {wineCollection.length === 0 ? (
         <p>No items found</p>
       ) : (
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {wineCollection.map((wine) => {
             return <WineCard key={wine._id} wine={wine} />;
           })}
