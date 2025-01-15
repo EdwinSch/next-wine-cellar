@@ -13,7 +13,7 @@ module.exports = {
       colors: {
         givry: {
           50: "#fdf8ed",
-          100: "#f5e5c0",
+          100: "#f5e5c0", // Primary
           200: "#efd498",
           300: "#e6ba63",
           400: "#e0a33f",
